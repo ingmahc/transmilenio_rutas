@@ -1,17 +1,35 @@
-from rutas import crear_grafo_c19, encontrar_mejor_ruta_transmilenio
+from rutas import crear_grafo_transmilenio, ruta_mas_corta, mostrar_ruta
 
 def main():
-    print("Bienvenido al sistema de rutas de TransMilenio (C19).\n")
+    print("Bienvenido al sistema de rutas de TransMilenio.\n")
 
-    # Crear el grafo de la ruta C19
-    grafo_c19 = crear_grafo_c19()
+    # Crear el grafo completo
+    grafo = crear_grafo_transmilenio()
 
-    # Definir origen y destino
-    origen = 'Portal Sur'
-    destino = 'Calle 100'
+    # Solicitar origen y destino
+    origen = input("Ingrese la estación de origen: ").strip()
+    destino = input("Ingrese la estación de destino: ").strip()
 
-    # Encontrar la mejor ruta
-    encontrar_mejor_ruta_transmilenio(grafo_c19, origen, destino)
+    # Validar estaciones
+    if origen not in grafo.nodes or destino not in grafo.nodes:
+        print("Error: Una o ambas estaciones no existen en el sistema.")
+        return
+
+    # Calcular la mejor ruta
+    ruta, tiempo = ruta_mas_corta(grafo, origen, destino)
+
+    if ruta:
+        print("\nLa mejor ruta encontrada es:")
+        print(f" -> {' -> '.join(ruta)}")
+        print(f"Tiempo estimado: {tiempo} minutos.\n")
+
+        # Mostrar detalles de las rutas utilizadas
+        detalles = mostrar_ruta(grafo, ruta)
+        print("Detalles del trayecto:")
+        for detalle in detalles:
+            print(f"- {detalle}")
+    else:
+        print("\nNo se encontró una ruta válida entre las estaciones especificadas.\n")
 
 if __name__ == "__main__":
     main()
