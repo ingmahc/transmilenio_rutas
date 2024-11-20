@@ -49,9 +49,9 @@ Ingresa la estación de origen y la estación de destino cuando se te solicite.
 
 El programa mostrará:
 
-La mejor ruta encontrada.
-El tiempo estimado del trayecto.
-Los detalles del recorrido, incluyendo las rutas utilizadas.
+- La mejor ruta encontrada.
+- El tiempo estimado del trayecto.
+- Los detalles del recorrido, incluyendo las rutas utilizadas.
 
 Ejemplo de Ejecución
 
