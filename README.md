@@ -37,20 +37,14 @@ El sistema utiliza la biblioteca **NetworkX** para modelar las estaciones y ruta
    git clone https://github.com/ingmahc/transmilenio_rutas.git
 Navega al directorio del proyecto:
 
-bash
-Copiar código
 cd transmilenio_rutas
 Instala las dependencias necesarias:
 
-bash
-Copiar código
 pip install -r requirements.txt
 Uso
 Ejecuta el archivo principal:
-
-bash
-Copiar código
 python main.py
+
 Ingresa la estación de origen y la estación de destino cuando se te solicite.
 
 El programa mostrará:
@@ -99,13 +93,10 @@ Miguel Ángel Herrera
 Estudiante de Inteligencia Artificial
 Universidad Iberoamericana
 
-Contacto
-Si tienes preguntas, sugerencias o comentarios, puedes contactarme en:
+
 
 Correo: ingmahc@gmail.com
 GitHub: ingmahc
-yaml
-Copiar código
 
 ---
 
