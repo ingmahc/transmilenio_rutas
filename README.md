@@ -52,9 +52,9 @@ El programa mostrará:
 La mejor ruta encontrada.
 El tiempo estimado del trayecto.
 Los detalles del recorrido, incluyendo las rutas utilizadas.
+
 Ejemplo de Ejecución
-plaintext
-Copiar código
+
 Bienvenido al sistema de rutas de TransMilenio.
 
 Ingrese la estación de origen: Portal Sur
@@ -80,6 +80,7 @@ rutas.py: Contiene las funciones y lógica del sistema de rutas (grafo y cálcul
 .gitignore: Archivo para ignorar archivos innecesarios en el repositorio, como entornos virtuales y archivos temporales.
 requirements.txt: Lista de dependencias necesarias para ejecutar el proyecto.
 README.md: Documentación del proyecto.
+
 Posibles Mejoras
 Ampliar las Rutas: Agregar todas las rutas y estaciones reales de TransMilenio.
 Datos en Tiempo Real: Integrar una API para obtener tiempos actualizados y estado de las rutas.
