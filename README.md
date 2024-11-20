@@ -100,14 +100,3 @@ GitHub: ingmahc
 
 ---
 
-### **Instrucciones para Guardar y Subir**
-
-1. Crea el archivo `README.md` en la raíz del proyecto.
-2. Copia y pega el contenido del archivo anterior.
-3. Guarda los cambios.
-4. Súbelo al repositorio con los siguientes comandos en PowerShell:
-
-   ```bash
-   git add README.md
-   git commit -m "Agregar README.md con detalles del proyecto"
-   git push origin main
